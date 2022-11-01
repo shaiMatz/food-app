@@ -1,31 +1,34 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h4>{{ msg }}</h4>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Why stay hungry when
+      you can order form Bella Onojie
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <span>Download the bella onoje’s food app now on</span>
+
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li>
+        <div class="download android">
+          <i class="fa fa fa-android fa-2x"></i>
+          <span class="df">Download from</span>
+          <span class="dfn">Google Play</span>
+        </div>
+      </lI>
+      <li>
+        <div class="download apple">
+          <i class="fa fa fa-apple fa-2x"></i>
+          <span class="df">Download from</span>
+          <span class="dfn">App Store</span>
+        </div>
+      </li>
+      <li>
+        <div class="download windows">
+          <i class="fa fa fa-windows fa-2x"></i>
+          <span class="df">Download from</span>
+          <span class="dfn">Windows Store</span>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -40,19 +43,114 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style lang="scss" scoped>
+.hello {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 200px;
+
+  h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #F7F7F7;
+  }
+
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+
+  }
+
+  span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #F7F7F7;
+
+  }
+
+  ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .download {
+    width: 200px;
+    height: 75px;
+    background: #0FB3C2;
+    float: left;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+    border-radius: 30px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+
+  .download>.fa {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+
+  .df,
+  .dfn {
+    position: absolute;
+    left: 50px;
+  }
+
+  .df {
+    top: 10px;
+    font-size: 14px;
+  }
+
+  .dfn {
+    top: 28px;
+    font-size: 1.08em;
+  }
+
+  .download:hover {
+
+    background-color: #FFF;
+    border: 1px solid #0FB3C2;
+
+    .df,
+    .dfn,
+    .fa {
+      color: #0FB3C2;
+    }
+  }
+
+
 }
 </style>
+
