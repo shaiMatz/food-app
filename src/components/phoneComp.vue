@@ -23,7 +23,7 @@ export default {
 
     .insideBox {
         height: calc(100% - 100px);
-        width:50%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         border-bottom: 3px solid #E4E4E4;
@@ -36,6 +36,13 @@ export default {
     position: absolute;
     top: -90px;
     left: calc(50% - 256px);
+    transition: 0.7s;
+    transform-style: preserve-3d;
+    transform-origin: right;
 
+    &:hover {
+        transform: scale3d(1.02, 1.02, 1.02);
+        left: calc(50% - 236px);
+    }
 }
 </style>>

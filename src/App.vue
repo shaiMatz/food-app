@@ -23,7 +23,7 @@
   <router-view />
 </template>
 
-<style>
+<style lang="scss" >
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -64,6 +64,12 @@ nav a {
   text-decoration: none;
   margin: 0 30px;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    color:#0083E7;
+    text-decoration: underline;
+  }
 }
 
 #logoFood {

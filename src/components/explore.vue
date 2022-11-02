@@ -1,16 +1,16 @@
 <template>
     <div class="box">
-        <h2>How the app works</h2>
         <div class="create">
-            <div class="phone">
-                <img src="../assets/firstPhone-removebg-preview.png">
-            </div>
+
             <div class="createText">
-                <h4>Create an account</h4>
-                <p>Create/login to an existing
-                    account to get started</p>
-                <span>An account is created with your email
-                    and a desired password</span>
+                <h4>Explore varieties</h4>
+                <p>Shop for your favorites
+                    meal as e dey hot.</p>
+                <span>Shop for your favorite meals or drinks
+                    and enjoy while doing it.</span>
+            </div>
+            <div class="phone">
+                <img src="../assets/secondPhone-removebg-preview.png">
             </div>
         </div>
     </div>
@@ -21,22 +21,8 @@
 <!-- fddhsfhg -->
 <style lang="scss" scoped>
 .box {
-    padding-top: 30px;
-    padding-bottom: 100px;
 
     background-color: #fff;
-
-    h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 44px;
-        line-height: 36px;
-        text-align: center;
-        letter-spacing: 0.1px;
-        color: #000000;
-        opacity: 0.8;
-    }
 
     .create {
         margin-top: 60px;
@@ -44,7 +30,7 @@
         display: flex;
 
         .phone {
-            margin-right: 80px;
+            margin-left: 80px;
 
             img {
                 width: 80%;
@@ -67,6 +53,8 @@
             padding-top: 50px;
             width: 568px;
             height: 280px;
+            margin-right: 60px;
+            margin-left: 150px;
 
             h4 {
                 font-family: 'Montserrat';
